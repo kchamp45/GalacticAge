@@ -8,21 +8,15 @@ Welcome to this application. Here you will be able to convert your age to a gala
 ## Development Specifications
 | Behavior      | Example Input         | Example Output        |
 | ------------- | ------------- | ------------- |
-| Create a cancer type | sarcoma  |     sarcoma        |
-| add a description to the cancer type  |      "cancer of the connective tissue"  | "cancer of the connective tissue"|
-| add a patient to the cancer type| "Ann..."| "female", "early stage", "Ann", 45, "breast cancer..."  |
-| add more than one patient | "Ann", "Bob"| "Ann", "Bob" |
-| update cancer type | "melanoma"| "melanoma"|
-|delete an individual cancer type |delete|" " |
-|show the details of the cancer type|"sarcoma", "cancer of the connective tissue"| "sarcoma", "cancer of the connective tissue"|
-|show details of the patient|"Ann, "female", "45", "breast cancer early stage"|"Ann, "female", "45", "breast cancer early stage"|
-update patient info|"Annette"|"Annette"|
-|delete patient from database|delete|" "|
-|create treatment | "chemotherapy", "6 months"| "chemotherapy", "6 months"|
-|add patient to treatment|"Ann"...| "Ann...", chemotherapy..."|
-|add treatment to patient| "chemotherapy..."|chemotherapy...", "Ann"|
-|update treatment plan|"radiation..."|"radiation..."|
-|delete treatment plan|delete "radiation"| ""|
+| convert age years into seconds | 5  |   157,680,000      |
+| return age based on birthdate  |     2012-09-08  | 5|
+| return age, in seconds, based on birthdate  |     2012-09-08  | 157,680,000|
+| return age in Mercury years| 5 | 1|
+| return age in Venus years | 5| 3 |
+| return age in Mars years | 5| 9|
+| return age in Jupiter years |5|59 |
+| return remaining life in the US based on gender and age|male, 5| 71|
+
 
 ## Setup/Installation Requirements
 _Download the following project from the gitHub by tapping "Download" or using 'git clone' from the terminal_
