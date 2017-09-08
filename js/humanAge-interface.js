@@ -1,16 +1,16 @@
-import { GalacticAge } from './../js/galacticAge.js';
+
 
 
 $(document).ready(function() {
-  $('#ageInSecs-form').submit(function(event) {
+  $('#AgeInSecs-form').submit(function(event) {
     event.preventDefault();
-    let age = parseInt($('#currentAge').val());
+    let age = $('#currentAge').val();
     let person = new GalacticAge();
     let ageInSeconds = person.toSec(age);
 
-    $('#ageInSecs-form').hide();
+    $('#AgeInSecs-form').hide();
 
-    $('#seconds').text(ageInSecs);
+    $('#seconds').text(ageInSeconds);
 
   });
 });

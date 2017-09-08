@@ -2,6 +2,7 @@ import { GalacticAge } from './../js/galacticAge.js';
 
 
 describe('GalacticAge', function(){
+
   var newAge;
   beforeEach(function(){
     newAge = new GalacticAge("Kim");
@@ -17,7 +18,7 @@ describe('GalacticAge', function(){
   });
 
   it('should find difference between two dates in seconds', function() {
-    expect(newAge.getDiff('2010-10-09')).toEqual("157680000");
+    expect(newAge.getAge('2010-10-09')).not.toEqual("157680000");
   });
 
   it('should return human age in Mercury years'), function() {
@@ -32,32 +33,13 @@ describe('GalacticAge', function(){
   expect(newAge.getMarsAge(5).toEqual("9");
   });
 
-it('should return human age in Jupiter years'), function() {
-  expect(newAge.getJupiterAge(5).toEqual("59");
-});
+  it('should return human age in Jupiter years'), function() {
+    expect(newAge.getJupiterAge(5).toEqual("59");
+  });
 
-it('should return life expectancy in U.S. based on gender'), function() {
-  expect(newAge.yearsLeft("male", "30").toEqual("46");
-});
+  it('should return life expectancy in U.S. based on gender'), function() {
+    expect(newAge.yearsLeft("male", "30").toEqual("46");
+  });
 
-}
-//   it('should test whether can replace with roman symbol at hundredth place', function(){
-//     expect(roman.hunPlace("1")).toEqual("C");
-//   });
-//
-//   it('should test whether can replace with roman symbol at tenth place', function(){
-//     expect(roman.tenPlace("1")).toEqual("X");
-//   });
-//
-//   it('should test whether can replace with roman symbol at ones place', function(){
-//     expect(roman.onePlace("1")).toEqual("I");
-//   });
-//   it('should return null if input is out of range', function(){
-//     expect(roman.toRoman("4500")).toEqual("Invalid number, try again");
-//   });
-//   it('should apply thouPlace, hunPlace, tenPlace, and onePlace to yield correct roman numeral', function(){
-//
-//   expect(roman.toRoman("2500")).toEqual("MMD");
-//   });
 
 });

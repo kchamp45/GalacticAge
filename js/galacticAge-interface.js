@@ -4,8 +4,8 @@ import { GalacticAge } from './../js/galacticAge.js';
 $(document).ready(function() {
   $('#age-form').submit(function(event) {
     event.preventDefault();
-    let humanName = $('#name').val());
-    let earthAge = parseInt($('#earthAge').val());
+    let humanName = $('#name').val();
+    let earthAge = $('#earthAge').val();
     let human = new GalacticAge(humanName);
     let mercuryAge = human.getMercuryAge(earthAge);
     let venusAge = human.getVenusAge(earthAge);
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     $('#mercury').text(mercuryAge);
     $('#venus').text(venusAge);
-    $$('#mars').text(marsAge);
+    $('#mars').text(marsAge);
     $('#jupiter').text(jupiterAge);
   });
 });

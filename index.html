@@ -7,19 +7,22 @@
     <title> Galactic Calculator</title>
   </head>
   <body>
-    <div>
+
+    <div class="container">
       <p><span id="result"></span></p>
       <h3>Here is the current time:</h3>
       <h3 id="time"></h3>
     </div>
-    <div>
+
+    <div class="container">
       <h1>Galactic Age Converter</h1>
       <p>Welcome to the ultimate age converter! Are you curious of your age on Mercury, Venus, Mars, or Jupiter? <br>Find out below. Just enter your earth Age and we'll do the rest!</p>
+    </div>
 
       <div class="container">
 
         <h1>Your birthdate:</h1>
-        <form id="AgeinSecs-form">
+        <form id="AgeInSecs-form">
           <div class="form-group">
             <label for="currentAge">Enter age:</label>
             <input id="currentAge" type="number" min="1">
@@ -76,9 +79,9 @@
     <div class="container">
 
       <h1>Years left to live on earth:</h1>
-      <form id="life-form">
+      <form id="life">
         <div class="form-group">
-          <label for="gender">Enter your earth age in years:</label>
+          <label for="earthAge">Enter your earth age in years:</label>
           <input id="earthAge" type="number" min="1">
 
           <select class="form-control" id="gender">
