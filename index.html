@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title> Galactic Calculator</title>
+  </head>
+  <body>
+    <div>
+      <p><span id="result"></span></p>
+      <h3>Here is the current time:</h3>
+      <h3 id="time"></h3>
+    </div>
+    <div>
+      <h1>Galactic Age Converter</h1>
+      <p>Welcome to the ultimate age converter! Are you curious of your age on Mercury, Venus, Mars, or Jupiter? <br>Find out below. Just enter your earth Age and we'll do the rest!</p>
+
+      <div class="container">
+
+        <h1>Your birthdate:</h1>
+        <form id="AgeinSecs-form">
+          <div class="form-group">
+            <label for="currentAge">Enter age:</label>
+            <input id="currentAge" type="number" min="1">
+
+          <button class="btn-success" type="submit" name="btn">Submit</button>
+          </div>
+        </form>
+
+        <div>
+          <p>Your age in seconds: <span id="seconds"></span></p>
+        </div>
+
+      </div>
+
+      <div class="container">
+
+        <p>Don't know your age? Find out.</p>
+
+        <form id="findAge-form">
+          <label for="birthdate">Enter your birthday in YYYY-MM-DD:</label>
+          <input id="birthdate" type="text">
+        <button class="btn-success" type="submit" name="btn">Submit</button>
+        </form>
+
+        <div>
+          <p>Here is your age in seconds: <span id="age"></span></p>
+        </div>
+
+      </div>
+
+    <div class="container">
+
+      <h1>Your galactic age:</h1>
+      <form id="age-form">
+        <div class="form-group">
+          <label for="name">Enter your name:</label>
+          <input id="name" type="text">
+          <label for="earthAge">Enter your earth age in years:</label>
+          <input id="earthAge" type="number" min="1">
+          <button class="btn-success" type="submit" name="btn">Submit</button>
+        </div>
+      </form>
+
+      <div id="ageResult">
+        <p>Your age on Mercury: <span id="mercury"></span></p>
+        <p>Your age on Venus: <span id="venus"></span></p>
+        <p>Your age on Mars: <span id="mars"></span></p>
+        <p>Your age on Jupiter: <span id="jupiter"></span></p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Years left to live on earth:</h1>
+      <form id="life-form">
+        <div class="form-group">
+          <label for="gender">Enter your earth age in years:</label>
+          <input id="earthAge" type="number" min="1">
+
+          <select class="form-control" id="gender">
+            <option>male</option>
+            <option>female</option>
+          </select>
+
+          <button class="btn-success" type="submit" name="btn">Submit</button>
+        </div>
+      </form>
+
+      <div id="lifeExpectancy">
+        <p>If you are a male, here is your life expectancy: <span id="male"></span></p>
+        <p>If you are a female, here is your life expectancy: <span id="female"></span></p>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
