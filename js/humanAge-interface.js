@@ -6,11 +6,11 @@ $(document).ready(function() {
     event.preventDefault();
     let age = parseInt($('#currentAge').val());
     let person = new GalacticAge();
-    let ageInSeconds = person.toSec(age;
+    let ageInSeconds = person.toSec(age);
 
     $('#ageInSecs-form').hide();
 
-    $('#age').text(ageInSecs);
+    $('#seconds').text(ageInSecs);
 
   });
 });

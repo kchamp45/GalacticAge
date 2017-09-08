@@ -10,10 +10,10 @@ export class GalacticAge {
     return earthAgeSec;
   }
 
-  getDiff(inputdate)
-    let formattedDate = moment(inputdate, 'YYYY-MM-DD');
-    let birthdate = moment(formattedDate);
-    let output = birthdate.fromNow();
+  getAge(today, birthdate)
+  let dateA = moment(today);
+  let dateB = moment(birthdate);
+  let output = dateA.diff(dateB, 'seconds');
   }
     return output;
   }
@@ -48,18 +48,19 @@ export class GalacticAge {
     const femaleAveLE = 81.30;
     if(earthAge < maleAveLE && gender === male) {
       timeRemaining = Math.round(maleAveLE - earthAge);
-      if(earthAge > maleAveLE) {
+
+    }else if(earthAge > maleAveLE && gender === male) {
         timeRemaining = `Congratulations, you have surpassed a male's average life expectancy of ${maleAveLE} in the United States.`
-      }
-      return timeRemaining;
 
     }else if(earthAge < femaleAveLE && gender === female) {
-      timeRemaining = Math.round(femaleAveLE - earthAge);
-      if(earthAge > femaleAveLE) {
+            timeRemaining = Math.round(femaleAveLE - earthAge);
+
+    }else if(earthAge > femaleAveLE && gender === female) {
         timeRemaining = `Congratulations, you have surpassed a female's average life expectancy of ${femaleAveLE} in the United States.`
-      }
-      return timeRemaining;
-    };
+    }
+
+    return timeRemaining;
   }
+
 
 };
