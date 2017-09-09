@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function() {
   $('#findAge-form').submit(function(event) {
     event.preventDefault();

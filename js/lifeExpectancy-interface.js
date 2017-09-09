@@ -1,17 +1,19 @@
-
-
-
 $(document).ready(function() {
-  $('#life').submit(function(event) {
+  $('#life-form').submit(function(event) {
     event.preventDefault();
     let gender = $('#gender').val();
-    let earthAge = $('#earthAge').val();
+    let yourAge = $('#yourAge').val();
     let person = new GalacticAge();
-    let remainingYears = person.yearsLeft(gender, earthAge);
+    let remainingYears = person.yearsLeft(gender, yourAge);
 
-    $('#life').hide();
+    $('#life-form').hide();
 
+    if(gender === male) {
     $('#male').text(remainingYears);
+    $(#showMale).show();
+    } else {
     $('#female').text(remainingYears);
+    $(#showFemale).show();
+    }
   });
 });

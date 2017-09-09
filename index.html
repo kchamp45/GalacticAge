@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title> Galactic Calculator</title>
@@ -79,10 +80,10 @@
     <div class="container">
 
       <h1>Years left to live on earth:</h1>
-      <form id="life">
+      <form id="life-form">
         <div class="form-group">
-          <label for="earthAge">Enter your earth age in years:</label>
-          <input id="earthAge" type="number" min="1">
+          <label for="yourAge">Enter your earth age in years:</label>
+          <input id="yourAge" type="number" min="1">
 
           <select class="form-control" id="gender">
             <option>male</option>
@@ -94,8 +95,8 @@
       </form>
 
       <div id="lifeExpectancy">
-        <p>If you are a male, here is your life expectancy: <span id="male"></span></p>
-        <p>If you are a female, here is your life expectancy: <span id="female"></span></p>
+        <p id="showMale">If you are a male, here is your life expectancy: <span id="male"></span></p>
+        <p id="showFemale">If you are a female, here is your life expectancy: <span id="female"></span></p>
       </div>
 
     </div>
