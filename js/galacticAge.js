@@ -54,7 +54,7 @@ export class GalacticAge {
       timeRemaining = this.getMarsAge(aveLifeExpectancy) - this.getMarsAge(yourAge);
     }else if(planet === "jupiter" && yourAge <= lifeExpOnJupiter){
       timeRemaining = this.getJupiterAge(aveLifeExpectancy) - this.getJupiterAge(yourAge);
-    }else if((planet === "mercury" && yourAge > lifeExpOnMercury) || (planet === "venus" && yourAge > lifeExpOnVenus) || (planet === "mars" && yourAge > lifeExpOnMars) || (planet === "jupiter" && yourAge > lifeExpOnJupiter) {
+    }else if((planet === "mercury" && yourAge > lifeExpOnMercury) || (planet === "venus" && yourAge > lifeExpOnVenus) || (planet === "mars" && yourAge > lifeExpOnMars) || (planet === "jupiter" && yourAge > lifeExpOnJupiter)) {
       timeRemaining = `Congratulations, you have surpassed your life expectancy. Live long and prosper!`;
     }
     return timeRemaining;

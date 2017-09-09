@@ -38,11 +38,11 @@ describe('GalacticAge', function(){
   });
 
   it('should return life expectancy in U.S. based on gender'), function() {
-    expect(newAge.yearsLeft("male", 30).toEqual(46.3);
+    expect(newAge.yearsLeft("mercury", 5).toEqual(18);
   });
 
   it('should return a congratulatory message for exceeding life expectancy', function() {
-    expect(newAge.yearsLeft("male", 80).toEqual("As of 2017, in the United States, the life expectancy for males is 76.3 years and for females is 81.3 years. Congratulations, you have surpassed your life expectancy. Live long and prosper!");  
+    expect(newAge.yearsLeft("mercury", 20).toEqual("Congratulations, you have surpassed your life expectancy. Live long and prosper!");  
   });
 
 });
