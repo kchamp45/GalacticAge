@@ -17,7 +17,7 @@ Welcome to this age calculator. Here you will be able to convert your age to a g
 | return age in Jupiter years |5|59 |
 | return remaining life on a chosen planet |mercury, 5| 18|
 ## Karma tests
-![Screenshot](https://github.com/kchamp45/GalacticAge/blob/master/images/Screen%20Shot%202017-09-09%20at%201.54.06%20PM.png)
+![Screenshot](https://github.com/kchamp45/GalacticAge/blob/master/images/Screen%20Shot%202017-09-09%20at%202.07.14%20PM.png)
 
 ## Setup/Installation Requirements
 _Download the following project from the gitHub by tapping "Download" or using 'git clone' from the terminal_
