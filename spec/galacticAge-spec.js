@@ -22,27 +22,27 @@ describe('GalacticAge', function(){
   });
 
   it('should return human age in Mercury years'), function() {
-    expect(newAge.getMercuryAge(5).toEqual(1);
+    expect(newAge.getMercuryAge(5)).toEqual(1);
   });
 
   it('should return human age in Venus years'), function() {
-    expect(newAge.getVenusAge(5).toEqual(3);
+    expect(newAge.getVenusAge(5)).toEqual(3);
   });
 
   it('should return human age in Mars years'), function() {
-  expect(newAge.getMarsAge(5).toEqual(9);
+  expect(newAge.getMarsAge(5)).toEqual(9);
   });
 
   it('should return human age in Jupiter years'), function() {
-    expect(newAge.getJupiterAge(5).toEqual(59);
+    expect(newAge.getJupiterAge(5)).toEqual(59);
   });
 
   it('should return life expectancy in U.S. based on gender'), function() {
-    expect(newAge.yearsLeft("mercury", 5).toEqual(18);
+    expect(newAge.yearsLeft("mercury", 5)).toEqual(18);
   });
 
   it('should return a congratulatory message for exceeding life expectancy', function() {
-    expect(newAge.yearsLeft("mercury", 20).toEqual("Congratulations, you have surpassed your life expectancy. Live long and prosper!");  
+    expect(newAge.yearsLeft("mercury", 20)).toEqual("Congratulations, you have surpassed your life expectancy. Live long and prosper!");  
   });
 
 });
