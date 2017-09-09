@@ -36,7 +36,7 @@ describe('GalacticAge', function(){
     expect(newAge.getJupiterAge(5)).toEqual(59);
   });
 
-  it('should return life expectancy in U.S. based on gender', function() {
+  it('should return remaining years on chosen planet', function() {
     expect(newAge.yearsLeft("mercury", 5)).toEqual(18);
   });
 
