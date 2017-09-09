@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $('#life-form').submit(function(event) {
     event.preventDefault();
-    let gender = $('#gender').val();
+    let planet = $('#planet').val().toLowerCase();
     let yourAge = $('#yourAge').val();
     let person = new GalacticAge();
-    let remainingYears = person.yearsLeft(gender, yourAge);
+    let remainingYears = person.yearsLeft(planet, yourAge);
 
     $('#life-form').hide();
 

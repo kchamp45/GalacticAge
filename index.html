@@ -43,7 +43,7 @@
         <p>Don't know your age? Find out.</p>
 
         <form id="findAge-form">
-          <label for="today">Enter your birthday in YYYY-MM-DD:</label>
+          <label for="today">Enter today's date in YYYY-MM-DD:</label>
           <input id="today" type="text">
           <label for="date">Enter your birthday in YYYY-MM-DD:</label>
           <input id="date" type="text">
@@ -85,9 +85,11 @@
           <label for="yourAge">Enter your earth age in years:</label>
           <input id="yourAge" type="number" min="1">
 
-          <select class="form-control" id="gender">
-            <option>male</option>
-            <option>female</option>
+          <select class="form-control" id="planet">
+            <option>Mercury</option>
+            <option>Venus</option>
+            <option>Mars</option>
+            <option>Jupiter</option>
           </select>
 
           <button class="btn-success" type="submit" name="btn">Submit</button>
@@ -95,7 +97,7 @@
       </form>
 
       <div id="lifeExpectancy">
-        <p>Here is your remaining years on earth: <span id="timeLeft"></span></p>
+        <p>Here is your remaining years on the planet: <span id="timeLeft"></span></p>
       </div>
 
     </div>
