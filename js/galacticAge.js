@@ -48,26 +48,13 @@ export class GalacticAge {
         timeRemaining = maleAveLE - yourAge;
       } else if (gender === "female" && yourAge <=femaleAveLE) {
         timeRemaining = femaleAveLE - yourAge;
-      } else if(gender === "male" && yourAge > maleAveLE) {
-        timeRemaining = `Congratulations, you have surpassed a male's average life expectancy of ${maleAveLE} years in the United States.`;
-      } else if(gender =="female" && yourAge > femaleAveLE) {
-        timeRemaining = `Congratulations, you have surpassed a female's average life expectancy of ${femaleAveLE} years in the United States.`;
+      } else if((gender === "male" && yourAge > maleAveLE) || (gender ==="female" && yourAge > femaleAveLE)) {
+        timeRemaining = `As of 2017, in the United States, the life expectancy for males is ${maleAveLE} years and for females is ${femaleAveLE} years.
+        Congratulations, you have surpassed your life expectancy. Live long and prosper!`;
       }
-    //   timeRemaining = Math.round((maleAveLE - earthAge));
-    //   console.log("DEGUG:" + timeRemaining);
-    //
-    // }else if((earthAge > maleAveLE) && (gender === male)) {
-    //
-    //
-    // }else if((earthAge <= femaleAveLE) && (gender === female)) {
-    //         timeRemaining = Math.round((femaleAveLE - earthAge));
-    //
-    // }else if((earthAge > femaleAveLE) && (gender === female)) {
-    //
-    // }
 
     return timeRemaining;
-    // }
+
   }
 
 };

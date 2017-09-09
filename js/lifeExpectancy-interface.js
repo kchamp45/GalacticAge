@@ -8,12 +8,7 @@ $(document).ready(function() {
 
     $('#life-form').hide();
 
-    if(gender === male) {
-    $('#male').text(remainingYears);
-    $(#showMale).show();
-    } else {
-    $('#female').text(remainingYears);
-    $(#showFemale).show();
-    }
+    $('#timeLeft').text(remainingYears);
+    $('#lifeExpectancy').show();
   });
 });
